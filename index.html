@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
+    <link rel="stylesheet" href="./css/test.css">
+    <title>filter images</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <div class="img-box">
+                <span class="show">photo will show here!</span>
+                <img  id="imag">
+                <canvas></canvas>
+            </div>
+            <div class="upload-box">
+                <label for="upolad">upload photo</label>
+                <input  type="file" id="upolad" accept="image/*">
+            </div>  
+        </div>
+        <div class="filters">
+            <ul>
+                <li>
+                    <label for="saturate">saturate</label>
+                    <input type="range"  id="saturate" min="0" step="1" max="200" value="100">
+                </li>
+                <li>
+                    <label for="contrast">contrast</label>
+                    <input type="range"  id="contrast" min="0" step="1" max="200" value="100">
+                </li>
+                <li>
+                    <label for="brightness">brightness</label>
+                    <input type="range"  id="brightness" min="0" max="200" value="100">
+                </li>
+                <li>
+                    <label for="sepia">sepia</label>
+                    <input type="range"  id="sepia" min="0" max="100" value="0">
+                </li>
+                <li>
+                    <label for="grayscale">grayscale</label>
+                    <input type="range"  id="grayscale" step="0.1" min="0" max="1" value="0">
+                </li>
+                <li>
+                    <label for="hue-rotate">hue-rotate</label>
+                    <input type="range"  id="hue-rotate"  min="0" max="360" value="0">
+                </li>
+                <li>
+                    <a  download="image" id="download">download</a>
+                    <span id="reset">reset</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./main.js" ></script>
+</body>
+</html>
